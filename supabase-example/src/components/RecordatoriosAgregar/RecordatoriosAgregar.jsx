@@ -1,12 +1,13 @@
+import React from 'react';
 import { useState, useEffect } from "react";
 import { supabase } from "../../config/supabaseClient";
-import AppBar from '../../components/AppBar';
+import AppBar from '../../components/Navbar';
 import { Button } from "@mui/material";
 import { Link } from "react-router-dom";
 
 
 
-export default function RecordatorioAdd({session}) {
+export default function RecordatoriosAgregar({session}) {
  const [loading, setLoading] = useState(true);
     const [titulo, setTitulo] = useState(null);
     const [fechacreacion, setFechaCreacion] = useState(null);

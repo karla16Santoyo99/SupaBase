@@ -1,5 +1,6 @@
-import AppBar from '../../components/AppBar';
-import { Card } from '../Card';
+import React from 'react';
+import Navbar from "../Navbar";
+import  Card from "../Card";
 import { useState, useEffect } from "react";
 import { supabase } from "../../config/supabaseClient";
 import { Button, Grid } from '@mui/material';
@@ -53,11 +54,11 @@ export default function RecordatorioHome({session}) {
     return (
         
         <div>
-         <AppBar/> 
+         <Navbar/> 
          <p>Bievenidos</p>
 
          <Button variant="contained">
-        < Link to="/AddRecordatorio">
+        < Link to="/RecordatoriosAgregar">
          Nuevo Recordatorio
          </Link>
          </Button>

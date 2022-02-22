@@ -12,7 +12,7 @@ const Navbar = () => {
         <div>
             
             <Box sx={{ flexGrow: 1 }}>
-                {/* <AppBar position="static"  color='primary'> */}
+             
                 <AppBar position="fixed" sx={{ bgcolor: red[700] }}>
 
                     <Toolbar>
@@ -23,7 +23,7 @@ const Navbar = () => {
                             aria-label="menu"
                             sx={{ mr: 2 }}
                         >
-                            {/* <MenuIcon /> */}
+                         
 
                         </IconButton>
                         <Typography variant='h6' component="div" sx={{ flexGrow: 1 }}>
@@ -36,11 +36,7 @@ const Navbar = () => {
                         Salir
                     </Button>
                 
-                                {/* <Button color="inherit" >
-                                <Link to="/Recordatorios">
-                                Recordatorios
-                                </Link>                                                                
-                                </Button> */}
+                                
 
                             <Button color="inherit" >
                                 <Link to="/Account">
@@ -56,14 +52,7 @@ const Navbar = () => {
                             <Avatar sx={{ bgcolor: blue[700] }} variant="square">
                                 A
                             </Avatar>
-                                {/* <ImgAccount            
-                url={imgAccount_url}
-                size={150}
-                onUpload={(url) => {
-                    setImgAccount_url(url);
-                    updateAccount({  imgAccount_url: url });
-                }}
-            /> */}
+                                
                             </IconButton>
                         </Tooltip>
 
