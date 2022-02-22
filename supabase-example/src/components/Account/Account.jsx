@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { supabase } from "../../config/supabaseClient";
 import Avatar from "../Avatar";
 
+
+
 export default function Account({ session }) {
     const [loading, setLoading] = useState(true);
     const [username, setUsername] = useState(null);
